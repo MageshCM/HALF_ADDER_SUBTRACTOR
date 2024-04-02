@@ -94,3 +94,4 @@ endmodule
 ![image](https://github.com/MageshCM/HALF_ADDER_SUBTRACTOR/assets/164765537/69f81d53-439e-42db-848e-aa5749f75fb5)
 
 **Result:**
+Thus Implementation-of-Half-Adder-and-Half Subtractor-circuit is running successfully
