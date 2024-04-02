@@ -34,6 +34,13 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+Half adder
+
+![image](https://github.com/MageshCM/HALF_ADDER_SUBTRACTOR/assets/164765537/4a16e716-63b6-4d27-9a13-208796b2b73f)
+
+Half subtractor
+
+![image](https://github.com/MageshCM/HALF_ADDER_SUBTRACTOR/assets/164765537/093c1088-c905-413d-badb-293434d9545d)
 
 **Procedure**
 
@@ -52,10 +59,38 @@ Figure -02 HALF Subtractor
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+Developed by: Magesh C M 
 
+RegisterNumber: 212223220053
+```
+module HALF_ADDSUB(a,b,sum,carry,D,Bo);
+input a,b;
+output sum,carry,D,Bo;
+//HALF ADDER
+xor(sum,a,b);
+and(carry,a,b);
+
+
+//HALF SUBTRACTOR
+wire abar;
+not(abar,a);
+xor(D,a,b);
+and(Bo,abar,b);
+endmodule
+```
 **RTL Schematic**
 
+![image](https://github.com/MageshCM/HALF_ADDER_SUBTRACTOR/assets/164765537/dd697cd4-407f-499f-a36a-8ac4466249e5)
+
+
 **Output/TIMING Waveform**
+
+**Half adder**
+
+![image](https://github.com/MageshCM/HALF_ADDER_SUBTRACTOR/assets/164765537/0a7cd36f-c939-4957-96ab-9fe0cd98a9c7)
+
+**half subtractor**
+
+![image](https://github.com/MageshCM/HALF_ADDER_SUBTRACTOR/assets/164765537/69f81d53-439e-42db-848e-aa5749f75fb5)
 
 **Result:**
